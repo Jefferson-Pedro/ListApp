@@ -45,7 +45,7 @@ No Terminal/Console:
 
 <img src="https://media-exp1.licdn.com/dms/image/C4D22AQEneXqUuc2h1g/feedshare-shrink_1280/0/1663542845940?e=1668038400&v=beta&t=qS5aGsZ7LoIrwUt8vUv4QqBSntgInj2lNrG-tf4Z9jk" alt=" ListApp - Primeira visualização do Projeto">
 
-<h3>Este projeto foi construido sem a utilização de Frameworks, apenas as bibliotecas nativas da IDE</h3>
+<h3>Este projeto foi construido utilizando <img align="center" alt="Jeff-Java" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"/> sem a utilização de Frameworks, apenas as bibliotecas nativas da IDE  </h3>
 
 <h3>Autor</h3>
 
