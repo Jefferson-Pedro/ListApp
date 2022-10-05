@@ -43,42 +43,9 @@ No Terminal/Console:
 	<li>Importe o projeto: Vá em File > Import > Paste General > "Existing projects into Workspace"</li>
 </ol>
 
-<a href="https://github.com/Jefferson-Pedro/Food-Communit/blob/main/Food%20Community.postman_collection.json"> 🚀 Collection API-Ecommerce - Postman</a><br>
+<img src="https://media-exp1.licdn.com/dms/image/C4D22AQEneXqUuc2h1g/feedshare-shrink_1280/0/1663542845940?e=1668038400&v=beta&t=qS5aGsZ7LoIrwUt8vUv4QqBSntgInj2lNrG-tf4Z9jk" alt=" ListApp - Primeira visualização do Projeto">
 
-<img src="https://github.com/Jefferson-Pedro/Food-Communit/blob/main/Swagger.png" alt=" API Ecommerce Food Community - Swagger UI">
-
-<h3>Tecnologias Utilizadas</h3>
-
-<table>
-<tr>
-	<th>Dependência</th>
-	<th>Versão</th>
-</tr>
-<tr>
-	<td>spring initialzr</td>
-	<td><a href="https://start.spring.io/">https://start.spring.io/</a></td>
-</tr>
-<tr>
-	<td>spring-boot-starter-web</td>
-	<td>2.7.4</td>
-</tr>
-<tr>
-	<td>spring-boot-starter-data-jpa</td>
-	<td>2.7.4</td>
-</tr>
-<tr>
-	<td>lombok</td>
-	<td>1.18.24</td>
-</tr>
-<tr>
-	<td>springfox-boot-starter</td>
-	<td>3.0.0</td>
-</tr>
-<tr>
-	<td>h2</td>
-	<td>2.1.214</td>
-</tr>
-</table>
+<h3>Este projeto foi construido sem a utilização de Frameworks, apenas as bibliotecas nativas da IDE</h3>
 
 <h3>Autor</h3>
 
@@ -91,10 +58,12 @@ Feito com 💙 por Jefferson Pedro 👋🏽 Entre em contato!
 <a href="https://www.instagram.com/jefferson.pedro25" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
 <a href = "mailto:jeffersonpedro05@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/jefferson-pedro-8a6264b9" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+
 <hr>
+
 <h3>Contribuindo</h3>
 
-Este repositório foi criado para fins de estudo, Inspirado no projeto <a href="https://github.com/cami-la/sacola-api_IFOOD_DEV_WEEK" target="_blank"> api_IFOOD_DEV_WEEK</a> <br>
+🚀 Este repositório foi criado para fins de estudo e melhora na pratica de desenvolvimento <br>
 
 Se possível:
 
