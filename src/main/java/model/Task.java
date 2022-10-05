@@ -105,10 +105,25 @@ public class Task {
 		this.updatedAt = updatedAt;
 	}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return "Task [id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description
 				+ ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt="
 				+ createdAt + ", updatedAt=" + updatedAt + "]";
+	}*/
+
+	@Override
+	public String toString() {
+		return "Tarefa: id = " + id + 
+			   "\n idProject = " + idProject + 
+			   "\n nome = " + name + 
+			   "\n description = " + description + 
+			   "\n notes = " + notes + 
+			   "\n isCompleted = " + isCompleted + 
+			   "\n deadline = " + deadline + 
+			   "\n createdAt = " + createdAt + 
+			   "\n updatedAt=" + updatedAt + 
+			   "\n";
 	}
+	
 }

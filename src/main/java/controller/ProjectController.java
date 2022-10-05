@@ -125,7 +125,7 @@ public class ProjectController {
                      
              resultado = statement.executeQuery();
              
-             //Enquanto existir dados no banco de dados, fa�a:
+             //Enquanto existir dados no banco de dados, faça:
              while(resultado.next()){
                  
                  Project project = new Project();

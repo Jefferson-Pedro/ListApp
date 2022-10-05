@@ -17,7 +17,7 @@ public class TaskController {
     public static void saveTask(Task task) {
 
         String sql = "INSERT INTO tasks ("
-                + "idProjects,"
+                + "idProject,"
                 + " name, "
                 + "description,"
                 + "completed,"
@@ -54,7 +54,7 @@ public class TaskController {
     //Atualiza a tarefa
     public void updateTask(Task task) {
         String sql = "UPDATE tasks SET "
-        		+ "idProjects = ?, " //1
+        		+ "idProject = ?, " //1
         		+ "name = ?, "		 //2
         		+ "description = ?, "//3
         		+ "notes = ?, "		//4
@@ -126,24 +126,26 @@ public class TaskController {
         Connection conexao = null;
         PreparedStatement statement = null;
         ResultSet resultado = null; //Guarda a resposta do banco de dados
-        
-        //Lista de Tarefas que ser� devolvida quando a chamada do m�todo acontecer
+       
+        //Lista de Tarefas que será devolvida quando a chamada do método acontecer
         List<Task> tasks = new ArrayList<Task>();
         
          try {
             conexao = ConectionFactory.getConnection();
             statement = conexao.prepareStatement(sql);
             
+            
             //Setando valor que corresponde ao filtro de busca
             statement.setInt(1, idProject);
             
-            //Valor retornado pela execu��o da query
-            statement.executeQuery();
+            //Valor retornado pela execução da query
+            //statement.executeQuery();
+            resultado = statement.executeQuery();
             
-             //Popula a lista do Java com os objetos do banco de dados;
+            //Popula a lista do Java com os objetos do banco de dados;
             while(resultado.next()){
                 
-               //Cria uma nova tarefa
+               //cria uma nova tarefa
                 Task task = new Task();
                 task.setId(resultado.getInt("id"));
                 task.setIdProject(resultado.getInt("idProject"));
@@ -165,7 +167,9 @@ public class TaskController {
         } finally {
             ConectionFactory.closeConnection(conexao, statement, resultado);
         }
-        // Lista de tarefas que foi criada e carregada do banco de dados      
+        // Lista de tarefas que foi criada e carregada do banco de dados   
+        //System.out.println(tasks);
         return tasks;
+        
     }
 }

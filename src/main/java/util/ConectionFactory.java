@@ -63,7 +63,7 @@ public class ConectionFactory {
             }
             
         } catch (Exception ex) {
-          throw new RuntimeException("Erro ao fechar a conex�o com o banco de dados", ex);
+          throw new RuntimeException("Erro ao fechar a conexão com o banco de dados", ex);
         }
     }
 }
