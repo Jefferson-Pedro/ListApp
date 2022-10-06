@@ -8,10 +8,10 @@
 
 <h3>Features</h3>
 
-- [x] A aplicação deve permitir criar uma lista de tarefas dentro de projetos  <br>
-- [x] A aplicação deve permitir editar uma lista de tarefas dentro de projetos <br>
-- [x] A aplicação deve permitir excluir uma lista de tarefas dentro de projetos <br>
-- [ ] A aplicação deve permitir buscar uma lista de tarefas dentro de projetos <br>
+✔️ A aplicação deve permitir criar uma lista de tarefas dentro de projetos  <br>
+✔️ A aplicação deve permitir editar uma lista de tarefas dentro de projetos <br>
+✔️ A aplicação deve permitir excluir uma lista de tarefas dentro de projetos <br>
+⏳ A aplicação deve permitir buscar uma lista de tarefas dentro de projetos <br>
 
 <h3>Demostração da Aplicação</h3>
 <p>Antes de começar, você precisará ter instalado em sua máquina as seguintes ferramentas:</p>
