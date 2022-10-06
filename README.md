@@ -8,10 +8,10 @@
 
 <h3>Features</h3>
 
-- [x] A aplicação deve permitir criar uma lista de tarefas dentro de projetos  <br>
-- [x] A aplicação deve permitir editar uma lista de tarefas dentro de projetos <br>
-- [x] A aplicação deve permitir excluir uma lista de tarefas dentro de projetos <br>
-- [ ] A aplicação deve permitir buscar uma lista de tarefas dentro de projetos <br>
+✔️ A aplicação deve permitir criar uma lista de tarefas dentro de projetos  <br>
+✔️ A aplicação deve permitir editar uma lista de tarefas dentro de projetos <br>
+✔️ A aplicação deve permitir excluir uma lista de tarefas dentro de projetos <br>
+⏳ A aplicação deve permitir buscar uma lista de tarefas dentro de projetos <br>
 
 <h3>Demostração da Aplicação</h3>
 <p>Antes de começar, você precisará ter instalado em sua máquina as seguintes ferramentas:</p>
@@ -29,18 +29,23 @@
 	<td>2022-09</td>
 </tr>
 <tr>
+	<td>MySQL</td>
+	<td>8.0.30</td>
+</tr>
+<tr>
 	<td>Git</td>
 	<td>2.**</td>
 </tr>
 </table>
 
-<h6>** Visando facilitar a demostração da aplicação, recomendo instalar apenas o Eclipse ou Netbeans e rodar o projeto através da IDE **</h6>
+<h6>** Visando facilitar a demostração da aplicação, recomendo utilizar apenas o Eclipse ou Netbeans e rodar o projeto através da IDE **</h6>
 
 No Terminal/Console:
 <ol>
 	<li>Faça um clone do projeto na sua máquina: <code>git clone https://github.com/Jefferson-Pedro/Food-Communit</code></li>
 	<li>Entre na pasta raiz do projeto: <code>cd listApp</code></li> 
 	<li>Importe o projeto: Vá em File > Import > Paste General > "Existing projects into Workspace"</li>
+	<li>Esteja com o Banco de Dados MySQL ativo ou o programa não executará</li>
 </ol>
 
 <img src="https://media-exp1.licdn.com/dms/image/C4D22AQEneXqUuc2h1g/feedshare-shrink_1280/0/1663542845940?e=1668038400&v=beta&t=qS5aGsZ7LoIrwUt8vUv4QqBSntgInj2lNrG-tf4Z9jk" alt=" ListApp - Primeira visualização do Projeto">
