@@ -38,7 +38,7 @@
 </tr>
 </table>
 
-<h6>** Visando facilitar a demostração da aplicação, recomendo instalar apenas o Eclipse ou Netbeans e rodar o projeto através da IDE **</h6>
+<h6>** Visando facilitar a demostração da aplicação, recomendo utilizar apenas o Eclipse ou Netbeans e rodar o projeto através da IDE **</h6>
 
 No Terminal/Console:
 <ol>
