@@ -29,6 +29,10 @@
 	<td>2022-09</td>
 </tr>
 <tr>
+	<td>MySQL</td>
+	<td>8.0.30</td>
+</tr>
+<tr>
 	<td>Git</td>
 	<td>2.**</td>
 </tr>
@@ -41,6 +45,7 @@ No Terminal/Console:
 	<li>Faça um clone do projeto na sua máquina: <code>git clone https://github.com/Jefferson-Pedro/Food-Communit</code></li>
 	<li>Entre na pasta raiz do projeto: <code>cd listApp</code></li> 
 	<li>Importe o projeto: Vá em File > Import > Paste General > "Existing projects into Workspace"</li>
+	<li>Esteja com o Banco de Dados MySQL ativo ou o programa não executará</li>
 </ol>
 
 <img src="https://media-exp1.licdn.com/dms/image/C4D22AQEneXqUuc2h1g/feedshare-shrink_1280/0/1663542845940?e=1668038400&v=beta&t=qS5aGsZ7LoIrwUt8vUv4QqBSntgInj2lNrG-tf4Z9jk" alt=" ListApp - Primeira visualização do Projeto">
