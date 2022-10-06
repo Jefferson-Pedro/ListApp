@@ -27,33 +27,27 @@ public class TaskTableModel extends AbstractTableModel {
         return columns.length;
     }
     
-     @Override
-     public String getColumnName(int columnIndex) {
-         return columns[columnIndex];
-     }
-    
-    
     //Retorna uma informação de uma linha e coluna
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         
        switch(columnIndex){
-           case 0:
+           case 1:
                return tasks.get(rowIndex).getName();
                
-           case 1:
+           case 2:
               return tasks.get(rowIndex).getDescription();
                
-           case 2:
+           case 3:
                return tasks.get(rowIndex).getDeadline();
                
-           case 3:
+           case 4:
               return tasks.get(rowIndex).isCompleted();
                
-           case 4:
+           case 5:
                return "";
                
-           case 5:
+           case 6:
                return "";
             
            default:
