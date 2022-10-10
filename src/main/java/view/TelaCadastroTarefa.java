@@ -201,14 +201,15 @@ public class TelaCadastroTarefa extends javax.swing.JDialog {
     private void jFormattedTextFieldCorpoPrazoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextFieldCorpoPrazoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFormattedTextFieldCorpoPrazoActionPerformed
-
+    
+    //Atualiza e mostra as tarefas salvas por projetos
     private void jLabel2LogoIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2LogoIconMouseClicked
         
       try {
             Task task = new Task();
             //task.setIdProject(projeto.getId()); //Setando a chave estrangeira
             
-            task.setIdProject(6);
+            task.setIdProject(projeto.getId());
             task.setName(jTextFieldCorpoNome.getText());
             task.setDescription(jTextAreaCorpoDescricao.getText());
             task.setNotes(jTextAreaCorpoNotas.getText());

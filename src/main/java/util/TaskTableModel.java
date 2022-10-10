@@ -79,6 +79,7 @@ public class TaskTableModel extends AbstractTableModel {
        }
     }
     
+    //Altera a tarefa no banco de dados, marcando se está completa ou não
     @Override
      public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
          tasks.get(rowIndex).setCompleted((boolean) aValue);

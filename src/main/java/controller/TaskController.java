@@ -96,7 +96,7 @@ public class TaskController {
     }
 
     //Remove uma tarefa
-    public void removeTaskById(int taskId) throws SQLException {
+    public void removeTaskById(int taskId) {
 
         String sql = "DELETE FROM tasks WHERE id = ?";
         
