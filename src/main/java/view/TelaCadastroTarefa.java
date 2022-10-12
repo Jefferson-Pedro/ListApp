@@ -56,7 +56,7 @@ public class TelaCadastroTarefa extends javax.swing.JDialog {
         jLabelLogoTitulo.setForeground(new java.awt.Color(255, 255, 255));
         jLabelLogoTitulo.setText("Tarefa");
 
-        jLabel2LogoIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\GitHub\\ListApp\\src\\main\\resources\\check.png")); // NOI18N
+        jLabel2LogoIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\NetBeansProjects\\Inteface Grafica\\resources\\icons\\check\\check (4).png")); // NOI18N
         jLabel2LogoIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2LogoIconMouseClicked(evt);
