@@ -16,7 +16,7 @@ import model.Project;
 public class TelaCadastroProjeto extends javax.swing.JDialog {
 
     ProjectController controller;
-    
+
     public TelaCadastroProjeto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -175,35 +175,34 @@ public class TelaCadastroProjeto extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCadastroTextFieldNomeActionPerformed
 
-    private void jLabelLogoIconMouseClicked(java.awt.event.MouseEvent evt) {                                            
-        
-       //Event: Dispara o evento ao clicar no icone "V" da TelaCadastroProjeto
-    	
-    	try {
-    		
-    		if (!jCadastroTextFieldNome.getText().equals("")) {
-    			
-    			Project projeto = new Project();
-            	
-            	//Pega o texto que está dentro do componente e seta no atributo:  
-            	projeto.setName(jCadastroTextFieldNome.getText()); //"name" da classe Project
-            	projeto.setDescription(jTextAreaDescricao.getText()); //e "description" a classe Project
-            	
-            	//Salva dentro do banco de dados
-            	controller.saveProject(projeto);
-            	JOptionPane.showMessageDialog(rootPane, "Projeto salvo com sucesso!");
-            	
-            	//Fecha a janela
-            	this.dispose();
-            	
-			} else {
-				JOptionPane.showMessageDialog(rootPane, "O projeto não pôde ser salvo "
-						+ "pois, o campo nome não foi preenchido.");
-			}
-    		        	
-		} catch (Exception e) {
-			JOptionPane.showMessageDialog(rootPane, e.getMessage());	
-		}
+    private void jLabelLogoIconMouseClicked(java.awt.event.MouseEvent evt) {
+
+        //Event: Dispara o evento ao clicar no icone "V" da TelaCadastroProjeto
+        try {
+
+            if (!jCadastroTextFieldNome.getText().equals("")) {
+
+                Project projeto = new Project();
+
+                //Pega o texto que está dentro do componente e seta no atributo:  
+                projeto.setName(jCadastroTextFieldNome.getText()); //"name" da classe Project
+                projeto.setDescription(jTextAreaDescricao.getText()); //e "description" a classe Project
+
+                //Salva dentro do banco de dados
+                controller.saveProject(projeto);
+                JOptionPane.showMessageDialog(rootPane, "Projeto salvo com sucesso!");
+
+                //Fecha a janela
+                this.dispose();
+
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "O projeto não pôde ser salvo "
+                        + "pois, o campo nome não foi preenchido.");
+            }
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(rootPane, e.getMessage());
+        }
     }
 
     /**

@@ -13,7 +13,7 @@ import model.Task;
 public class TaskTableModel extends AbstractTableModel {
     
     String[] columns = {"Nome", "Decrição", "Prazo", "Tarefa Concluída", "Editar", "Excluir"};
-    List<Task> tasks = new ArrayList();
+    List<Task> tasks = new ArrayList<>();
     
     
     //Retorna q qtde linhas a tabela vai ter
@@ -37,7 +37,7 @@ public class TaskTableModel extends AbstractTableModel {
      //Permite editar celula
      public boolean isCellEditable(int rowIndex, int columnIndex){
          
-         return columnIndex ==3;
+         return columnIndex == 3;
      }
      
      //Retorna o tipo de cada item da coluna
