@@ -66,7 +66,7 @@ public class TelaCadastroProjeto extends javax.swing.JDialog {
         jLabelLogo.setText("Projeto");
 
         jLabelLogoIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelLogoIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\NetBeansProjects\\Inteface Grafica\\resources\\icons\\check\\check (4).png")); // NOI18N
+        jLabelLogoIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\GitHub\\ListApp\\src\\main\\resources\\check.png")); // NOI18N
         jLabelLogoIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelLogoIconMouseClicked(evt);
@@ -175,7 +175,7 @@ public class TelaCadastroProjeto extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCadastroTextFieldNomeActionPerformed
 
-    private void jLabelLogoIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelLogoIconMouseClicked
+    private void jLabelLogoIconMouseClicked(java.awt.event.MouseEvent evt) {                                            
         
        //Event: Dispara o evento ao clicar no icone "V" da TelaCadastroProjeto
     	

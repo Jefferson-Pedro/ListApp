@@ -10,6 +10,7 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 import model.Project;
 import model.Task;
+import util.ButtonColumnCellRederer;
 import util.DeadlineColumnCellRenderer;
 import util.TaskTableModel;
 
@@ -111,7 +112,7 @@ public class MainScreen extends javax.swing.JFrame {
 
         jLabelLogoMainApp.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabelLogoMainApp.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelLogoMainApp.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\NetBeansProjects\\Inteface Grafica\\resources\\icons\\tick\\tick (3).png")); // NOI18N
+        jLabelLogoMainApp.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\GitHub\\ListApp\\src\\main\\resources\\tick.png")); // NOI18N
         jLabelLogoMainApp.setText(" List App");
 
         jLabelLogoLemaApp.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -146,7 +147,7 @@ public class MainScreen extends javax.swing.JFrame {
         jLabelProjectsLogo.setForeground(new java.awt.Color(0, 153, 102));
         jLabelProjectsLogo.setText("Projetos");
 
-        jLabelProjectsIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\NetBeansProjects\\Inteface Grafica\\resources\\icons\\add\\add (5).png")); // NOI18N
+        jLabelProjectsIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\GitHub\\ListApp\\src\\main\\resources\\add.png")); // NOI18N
         jLabelProjectsIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelProjectsIconMouseClicked(evt);
@@ -183,7 +184,7 @@ public class MainScreen extends javax.swing.JFrame {
         jLabelTasksTittle.setMaximumSize(new java.awt.Dimension(70, 25));
         jLabelTasksTittle.setMinimumSize(new java.awt.Dimension(70, 25));
 
-        jLabelTasksIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\NetBeansProjects\\Inteface Grafica\\resources\\icons\\add\\add (5).png")); // NOI18N
+        jLabelTasksIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add.png"))); // NOI18N
         jLabelTasksIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelTasksIconMouseClicked(evt);
@@ -251,7 +252,7 @@ public class MainScreen extends javax.swing.JFrame {
         jPanelEmptyList.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabelEmptyListIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelEmptyListIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\NetBeansProjects\\Inteface Grafica\\resources\\icons\\list\\xxhdpi-lists.png")); // NOI18N
+        jLabelEmptyListIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\jefferson.silva\\Documents\\GitHub\\ListApp\\src\\main\\resources\\listEmpty.png")); // NOI18N
 
         jLabelEmptyListMessage1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabelEmptyListMessage1.setForeground(new java.awt.Color(0, 153, 102));
@@ -467,7 +468,14 @@ public class MainScreen extends javax.swing.JFrame {
 		jTableTasks.getTableHeader().setBackground(new Color(0, 153, 102));
 		jTableTasks.getTableHeader().setForeground(new Color(255, 255, 255));
 		
+		//Rederiza a cor de uma célula
 		jTableTasks.getColumnModel().getColumn(2).setCellRenderer(new DeadlineColumnCellRenderer());
+		
+		//Seta a coluna de edit que irá ser renderizada com um botão
+		jTableTasks.getColumnModel().getColumn(4).setCellRenderer(new ButtonColumnCellRederer("/edit.png"));
+		
+		//Seta a coluna de delete que irá ser renderizada com um botão
+		jTableTasks.getColumnModel().getColumn(5).setCellRenderer(new ButtonColumnCellRederer("/delete.png"));
 		
 		// Permite que haja ordenadores alfabeticos nas colunas das tabelas
 		jTableTasks.setAutoCreateRowSorter(true);
