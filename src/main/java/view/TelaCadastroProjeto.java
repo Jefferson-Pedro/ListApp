@@ -180,24 +180,31 @@ public class TelaCadastroProjeto extends javax.swing.JDialog {
        //Event: Dispara o evento ao clicar no icone "V" da TelaCadastroProjeto
     	
     	try {
-    		Project projeto = new Project();
-        	
-        	//Pega o texto que está dentro do componente e seta no atributo:  
-        	projeto.setName(jCadastroTextFieldNome.getText()); //"name" da classe Project
-        	projeto.setDescription(jTextAreaDescricao.getText()); //e "description" a classe Project
-        	
-        	//Salva dentro do banco de dados
-        	controller.saveProject(projeto);
-        	JOptionPane.showMessageDialog(rootPane, "Projeto salvo com sucesso!");
-        	
+    		
+    		if (!jCadastroTextFieldNome.getText().equals("")) {
+    			
+    			Project projeto = new Project();
+            	
+            	//Pega o texto que está dentro do componente e seta no atributo:  
+            	projeto.setName(jCadastroTextFieldNome.getText()); //"name" da classe Project
+            	projeto.setDescription(jTextAreaDescricao.getText()); //e "description" a classe Project
+            	
+            	//Salva dentro do banco de dados
+            	controller.saveProject(projeto);
+            	JOptionPane.showMessageDialog(rootPane, "Projeto salvo com sucesso!");
+            	
+            	//Fecha a janela
+            	this.dispose();
+            	
+			} else {
+				JOptionPane.showMessageDialog(rootPane, "O projeto não pôde ser salvo "
+						+ "pois, o campo nome não foi preenchido.");
+			}
+    		        	
 		} catch (Exception e) {
-			JOptionPane.showMessageDialog(rootPane, e.getMessage());
-			
-		}finally {
-			//Fecha a janela
-        	this.dispose();
+			JOptionPane.showMessageDialog(rootPane, e.getMessage());	
 		}
-    }//GEN-LAST:event_jLabelLogoIconMouseClicked
+    }
 
     /**
      * @param args the command line arguments
