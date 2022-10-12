@@ -206,32 +206,39 @@ public class TelaCadastroTarefa extends javax.swing.JDialog {
     private void jLabel2LogoIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2LogoIconMouseClicked
         
       try {
-            Task task = new Task();
-            //task.setIdProject(projeto.getId()); //Setando a chave estrangeira
-            
-            task.setIdProject(projeto.getId());
-            task.setName(jTextFieldCorpoNome.getText());
-            task.setDescription(jTextAreaCorpoDescricao.getText());
-            task.setNotes(jTextAreaCorpoNotas.getText());
-            task.setCompleted(false);
-            
-            //Conversão de data
-            SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy");
-            Date data = null;
-            data = dataFormatada.parse(jFormattedTextFieldCorpoPrazo.getText());
-            task.setDeadline(data);
-            
-            controller.saveTask(task);
-            JOptionPane.showMessageDialog(rootPane, "Tarefa salva com sucesso!");
-            
+    	  
+    	  if (jTextFieldCorpoNome.getText().isEmpty() || 
+    			  jFormattedTextFieldCorpoPrazo.getText().isEmpty()) {
+    		  
+    		  JOptionPane.showMessageDialog(rootPane, "Tarefa não foi "
+    		  		+ "salva, pois existem campos obrigatórios a serem preenchidos!");
+			
+		} else {
+			Task task = new Task();
+	          //task.setIdProject(projeto.getId()); //Setando a chave estrangeira
+	          
+	          task.setIdProject(projeto.getId());
+	          task.setName(jTextFieldCorpoNome.getText());
+	          task.setDescription(jTextAreaCorpoDescricao.getText());
+	          task.setNotes(jTextAreaCorpoNotas.getText());
+	          task.setCompleted(false);
+	            
+	            //Conversão de data
+	            SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy");
+	            Date data = null;
+	            data = dataFormatada.parse(jFormattedTextFieldCorpoPrazo.getText());
+	            task.setDeadline(data);
+	            
+	            controller.saveTask(task);
+	            JOptionPane.showMessageDialog(rootPane, "Tarefa salva com sucesso!");
+	            
+	            this.dispose();
+		}
+ 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(rootPane, e.getMessage());
-            
-        }finally{
-            this.dispose();
+            JOptionPane.showMessageDialog(rootPane, e.getMessage());   
         }
-        
-        
+
     }//GEN-LAST:event_jLabel2LogoIconMouseClicked
 
     /**
