@@ -4,7 +4,7 @@
 <p> O projeto visa desenvolver uma aplicação de para o gerenciamento de listas de tarefas</p>
 
 <h3>Status do Projeto</h3>
-<p align="center"> 💻 Em construção... </p>
+<p align="center"> 🚧 Em construção... 🚧</p>
 
 <h3>Features</h3>
 
